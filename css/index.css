@@ -2,6 +2,18 @@ body {
     background-color: #af0000;
 }
 
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #container {
     width: 960px;
     margin: auto;
@@ -20,13 +32,22 @@ h1 {
     text-align: center;
     color: #af0000;
     font-size: 48px;
-    text-transform: uppercase;
     font-family: 'Cinzel', serif;
 }
 
 h3 {
     text-align: center;
-    font-size: 48px;
+    font-size: 30px;
+    /* text-transform: uppercase; */
+    font-family: 'Cinzel', serif;
+}
+
+li {
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .center {
@@ -34,4 +55,79 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.stats-card {
+    text-align: center;
+    border: rgb(22, 22, 22) solid 2px;
+    width: 15rem;
+    height: 20rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px #af0000
+  }
+
+button {
+    display: block;
+    margin: auto;
+    background-color: #af0000;
+    border: solid 2px black;
+    border-radius: 5px;
+    height: 3rem;
+    width: 150px;
+    color: whitesmoke;
+    font-size: 18px;
+    justify-self: center;
+}
+
+ .comment-section {
+   width: 600px;
+   border: 2px solid black;
+   padding: 50px;
+   justify-self: center;
+   
+ }
+
+ .commment-sction h3 {
+   text-align:center;
+   justify-self: center;
+   margin: auto;
+ }
+
+ textarea {
+   height: 50px;
+   width: 50%;
+   border: solid 2px black;
+   font-size: 16px;
+   font-family: Helvetica, sans-serif;
+  
+   
+ }
+
+ input[type="submit"] {
+   display: block;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   background-color: #af0000;
+   border: solid 2px black;
+   border-radius: 5px;
+   height: 3rem;
+   width: 125px;
+   color: white;
+   font-size: 18px;
+ }
+
+ .comments {
+   list-style-type: none;
+   background-color: white;
+   width: 550px;
+   height: 40px;
+   padding-left: 10px;
+   padding-top: 10px;
+   margin-bottom: 10px;
+   border-radius: 3px;
+ }
+
+ul {
+  float: left;
 }
